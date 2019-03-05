@@ -1,0 +1,27 @@
+{
+  "name": "@modular-app/tokens",
+  "version": "1.0.0",
+  "description": "A set of design system tokens for building Modular Apps",
+  "repository": "https://github.com/lukehedger/modular-app.git",
+  "author": "lukehedger <https://level-out.com/>",
+  "license": "MIT",
+  "scripts": {
+    "build": "pack build",
+    "release": "pack publish"
+  },
+  "devDependencies": {
+    "@pika/pack": "0.3.4",
+    "@pika/plugin-build-web": "0.3.13",
+    "@pika/plugin-standard-pkg": "0.3.13"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@modular-app/components",
+  "description": "A set of components for building Modular Apps",
+  "version": "1.0.0",
+  "license": "MIT",
+  "esnext": "dist-src/index.js",
+  "module": "dist-web/index.js",
+  "pika": true,
+  "sideEffects": false,
+  "files": [
+    "dist-*/",
+    "assets/",
+    "bin/"
+  ],
+  "repository": "https://github.com/lukehedger/modular-app.git",
+  "dependencies": {},
+  "devDependencies": {
+    "@pika/pack": "0.3.4",
+    "@pika/plugin-build-web": "0.3.13",
+    "@pika/plugin-standard-pkg": "0.3.13"
+  }
+}
